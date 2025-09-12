@@ -7,7 +7,6 @@ const apiURL = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=`
 const loadWeather = async (city) => {
   const res = await fetch(apiURL + city + `&appid=${apiKey}`);
   const data = await res.json();
-//   console.log(data)
   if (parseInt(data.cod) === 404) {
     document.getElementById("err-mssg").classList.remove("hidden");
     document.getElementById("Weather-section").classList.add("hidden");
@@ -39,6 +38,10 @@ const loadWeather = async (city) => {
 
 seeWeatherBtn.addEventListener("click", () => {
   const city = document.getElementById("city-name").value;
+  if (city === "") {
+    alert("Enter a valid city name")
+    return
+  }
   loadWeather(city);
   document.getElementById("city-name").value = "";
 });
