@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- tailwindcss cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-800 flex justify-center items-center">
+    <div
+      class="card flex justify-center items-center flex-col mt-40 bg-gradient-to-br from-emerald-400 to-slate-600 p-5 rounded-3xl"
+    >
+      <div
+        class="search-box max-w-min flex justify-center items-center gap-8 w-[90%]"
+      >
+        <input
+          id="city-name"  
+          class="bg-[#ebfffc] p-2 rounded-4xl outline-0"
+          type="text"
+          placeholder="Enter City Name"
+          spellcheck="false"
+          required
+        />
+        <button id="see-weather-btn" class="text-xl bg-[#ebfffc] p-2 rounded-full text-gray-500">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div>
+        <h2 id="err-mssg" class="text-white mt-3 font-semibold text-2xl hidden">Enter a valid city name</h2>
+      </div>
+
+      <div id="Weather-section" class="weather-detail text-center text-white hidden">
+        <div class="flex justify-center items-center">
+          <div class="space-y-1">
+            <img id="weather-img" class="w-20" src="./images/clear.png" alt="weather-img"/>
+            <h1 class="temp text-5xl font-bold">Temp°<sup>C</sup></h1>
+            <h2 class="city text-3xl font-medium">City</h2>
+          </div>
+        </div>
+        <div
+          class="details flex items-center justify-between gap-10 mt-12 px-5"
+        >
+          <div class="col flex items-center text-left">
+            <img class="w-10 mr-3" src="./images/wind.png" alt="" />
+            <div>
+              <p class="wind text-2xl font-semibold">wind</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+          <div class="col flex items-center text-left">
+            <img class="w-10 mr-3" src="./images/humidity.png" alt="" />
+            <div>
+              <p class="humidity text-2xl font-semibold">Humidity</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
