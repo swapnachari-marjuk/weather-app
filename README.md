@@ -28,8 +28,35 @@ Upon visiting the live site, you will find a search bar.
 - HTML5  
 - Tailwind CSS  
 - Vanilla JavaScript (DOM Manipulation)  
-- OpenWeather API  
+- OpenWeather API
 
+## 🏠 Run Locally
+
+This is a front-end (static) web project, so no backend server is required. Follow these steps to run it on your local machine:
+
+1. **Clone or Download the Project**  
+   - From GitHub:
+     ```bash
+     git clone <your-repo-link>
+     ```
+   - Or download the ZIP and unzip it.
+
+2. **Navigate to the Project Folder**  
+   ```bash
+   cd <project-folder>
+
+3. **Open index.html in Your Browser**
+   - Double-click the index.html file.
+
+4. **Optional: Using a Development Server**
+   For faster reloads during development, you can use a lightweight dev server:
+
+   - VS Code + Live Server Extension:
+      - Open the project in VS Code
+      - Open index.html and click the Go Live button at the bottom
+
+### ⚠ Note: Since the project fetches data from the OpenWeather API, ensure your internet
+---
 ## 🚀 Live Demo
 Here is github live link: https://swapnachari-marjuk.github.io/weather-app/
 
