@@ -31,5 +31,5 @@ Upon visiting the live site, you will find a search bar.
 - OpenWeather API  
 
 ## 🚀 Live Demo
-(Add your live link here)
+Here is github live link: https://swapnachari-marjuk.github.io/weather-app/
 
