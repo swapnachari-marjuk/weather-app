@@ -37,13 +37,13 @@ This is a front-end (static) web project, so no backend server is required. Foll
 1. **Clone or Download the Project**  
    - From GitHub:
      ```bash
-     git clone <your-repo-link>
+     git clone https://github.com/swapnachari-marjuk/weather-app
      ```
    - Or download the ZIP and unzip it.
 
 2. **Navigate to the Project Folder**  
    ```bash
-   cd <project-folder>
+   cd /weather-app
 
 3. **Open index.html in Your Browser**
    - Double-click the index.html file.
